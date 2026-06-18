@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naru Tejasri — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#hero" class="logo">NT</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-hire">Hire me</a>
+  <button class="ham" id="ham" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"    onclick="closeNav()">About</a>
+  <a href="#skills"   onclick="closeNav()">Skills</a>
+  <a href="#projects" onclick="closeNav()">Work</a>
+  <a href="#contact"  onclick="closeNav()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <div class="noise"></div>
+
+  <div class="hero-left">
+    <div class="avail-badge">
+      <span class="dot"></span>
+      Available for opportunities
+    </div>
+
+    <h1 class="hero-h1">
+      <span class="line">Naru</span>
+      <span class="line fade-gold">Tejasri</span>
+    </h1>
+
+    <div class="hero-role-wrap">
+      <span class="role-static">I craft</span>
+      <div class="role-cycle" id="roleCycle">
+        <span class="rw active">web experiences</span>
+        <span class="rw">clean interfaces</span>
+        <span class="rw">fast products</span>
+        <span class="rw">bold designs</span>
+      </div>
+    </div>
+
+    <p class="hero-bio">
+      Frontend developer from Guntur, AP — turning complex ideas
+      into elegant, performant interfaces. Currently pursuing B.Tech &amp;
+      building for the open web.
+    </p>
+
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-fill">View my work</a>
+      <a href="https://github.com/tejasri-13" target="_blank" class="btn-line">GitHub ↗</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat">
+        <strong>15+</strong>
+        <span>Projects</span>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <strong>3</strong>
+        <span>Internships</span>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat">
+        <strong>2+</strong>
+        <span>Yrs coding</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-card tilt-card">
+      <div class="hc-inner">
+        <div class="hc-avatar">
+          <span>NT</span>
+          <div class="av-ring"></div>
+        </div>
+        <div class="hc-name">Naru Tejasri</div>
+        <div class="hc-role">Frontend Developer</div>
+        <div class="hc-chips">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>React</span><span>Java</span><span>Git</span>
+        </div>
+        <div class="hc-status">
+          <span class="status-dot"></span> Open to work
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="Scroll down">
+    <div class="sd-arrow"></div>
+  </a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <div class="container">
+    <p class="eyebrow">About me</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Crafting the web,<br><em>one line at a time.</em></h2>
+        <p>
+          I'm a B.Tech CSE(AI&ML) student with a deep passion for frontend development.
+          What started as curiosity about "how websites work" became an obsession
+          with building things that feel <strong>alive, fast, and beautiful</strong>.
+        </p>
+        <p>
+          Currently interning at <span class="accent-text">3Skill</span> and building
+          projects that push my understanding of design systems, performance,
+          and user experience.
+        </p>
+        <div class="about-meta">
+          <div class="meta-item">
+            <span class="meta-key">Location</span>
+            <span class="meta-val">Guntur, AP</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-key">Education</span>
+            <span class="meta-val">B.Tech CSE(AI&ML)</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-key">Status</span>
+            <span class="meta-val open-status">Open to work</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-key">Languages</span>
+            <span class="meta-val">Telugu · Hindi · English</span>
+          </div>
+        </div>
+        <a href="#" class="btn-line" download>Download resume ↓</a>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-year">2026</div>
+          <div class="tl-line-wrap"><div class="tl-dot"></div><div class="tl-track"></div></div>
+          <div class="tl-body">
+            <strong>3Skill Internship</strong>
+            <span>Web Development · Real-world projects</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2025</div>
+          <div class="tl-line-wrap"><div class="tl-dot"></div><div class="tl-track"></div></div>
+          <div class="tl-body">
+            <strong>Built First Website</strong>
+            <span>Self-taught HTML/CSS · Fell in love with the web</span>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2023</div>
+          <div class="tl-line-wrap"><div class="tl-dot"></div><div class="tl-track"></div></div>
+          <div class="tl-body">
+            <strong>Started B.Tech CSE(AI&ML)</strong>
+            <span>CGPA 9.1 · Active in tech clubs</span>
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+  <div class="container">
+    <p class="eyebrow">Skills</p>
+    <h2 class="section-h2">My <em>toolkit</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-card tilt-card">
+        <div class="sk-top">
+          <span class="sk-emoji">⚡</span>
+          <span class="sk-pct">95%</span>
+        </div>
+        <div class="sk-name">HTML & CSS</div>
+        <div class="sk-bar"><div class="sk-fill" style="--p:95%"></div></div>
+        <div class="sk-tags"><span>Flexbox</span><span>Grid</span><span>Animations</span><span>Responsive</span></div>
+      </div>
+
+      <div class="skill-card tilt-card">
+        <div class="sk-top">
+          <span class="sk-emoji">🟨</span>
+          <span class="sk-pct">80%</span>
+        </div>
+        <div class="sk-name">JavaScript</div>
+        <div class="sk-bar"><div class="sk-fill" style="--p:80%"></div></div>
+        <div class="sk-tags"><span>ES6+</span><span>DOM</span><span>Async/Await</span><span>APIs</span></div>
+      </div>
+
+      <div class="skill-card tilt-card">
+        <div class="sk-top">
+          <span class="sk-emoji">⚛️</span>
+          <span class="sk-pct">70%</span>
+        </div>
+        <div class="sk-name">React.js</div>
+        <div class="sk-bar"><div class="sk-fill" style="--p:70%"></div></div>
+        <div class="sk-tags"><span>Hooks</span><span>Context</span><span>Components</span></div>
+      </div>
+
+      <div class="skill-card tilt-card">
+        <div class="sk-top">
+          <span class="sk-emoji">☕</span>
+          <span class="sk-pct">75%</span>
+        </div>
+        <div class="sk-name">Java</div>
+        <div class="sk-bar"><div class="sk-fill" style="--p:75%"></div></div>
+        <div class="sk-tags"><span>OOP</span><span>Collections</span><span>DSA</span></div>
+      </div>
+
+      <div class="skill-card tilt-card">
+        <div class="sk-top">
+          <span class="sk-emoji">🔧</span>
+          <span class="sk-pct">85%</span>
+        </div>
+        <div class="sk-name">Git & GitHub</div>
+        <div class="sk-bar"><div class="sk-fill" style="--p:85%"></div></div>
+        <div class="sk-tags"><span>Version control</span><span>Branching</span><span>Collab</span></div>
+      </div>
+
+      <div class="skill-card tilt-card">
+        <div class="sk-top">
+          <span class="sk-emoji">🎨</span>
+          <span class="sk-pct">80%</span>
+        </div>
+        <div class="sk-name">Figma & UI Design</div>
+        <div class="sk-bar"><div class="sk-fill" style="--p:80%"></div></div>
+        <div class="sk-tags"><span>Wireframing</span><span>Prototyping</span><span>Design Systems</span></div>
+      </div>
+
+    </div>
+
+    <div class="also-worked">
+      <span class="aw-label">Also worked with</span>
+      <div class="chips">
+        <span>Figma</span><span>VS Code</span><span>Tailwind CSS</span>
+        <span>Bootstrap</span><span>Node.js</span><span>MongoDB</span>
+        <span>Linux</span><span>C / C++</span><span>Postman</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <div class="container">
+    <p class="eyebrow">Selected work</p>
+    <h2 class="section-h2">Things I've <em>built</em></h2>
+
+    <div class="projects-list">
+
+      <!-- PROJECT 1 — FEATURED -->
+      <div class="proj-card featured tilt-card">
+        <div class="proj-visual" style="--c1:#0f0c29;--c2:#302b63;--c3:#24243e;">
+          <div class="browser-bar">
+            <span class="bb-dot" style="background:#ff5f56"></span>
+            <span class="bb-dot" style="background:#ffbd2e"></span>
+            <span class="bb-dot" style="background:#27c93f"></span>
+            <div class="bb-url">resumecraft.ai</div>
+          </div>
+          <div class="browser-screen">
+            <div class="bs-nav"></div>
+            <div class="bs-hero"></div>
+            <div class="bs-row">
+              <div class="bs-card"></div>
+              <div class="bs-card"></div>
+              <div class="bs-card"></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-meta">
+            <div class="proj-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <span class="proj-num">01</span>
+          </div>
+          <h3>ResumeCraft AI</h3>
+          <p>AI-powered resume builder with live preview, smart scoring, 20+ templates, theme switcher, auto-save and PDF export. Built during 3Skill internship.</p>
+          <div class="proj-links">
+            <a href="#" class="pl-live">Live demo ↗</a>
+            <!-- EDIT: replace with your actual GitHub repo link -->
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/resumecraft-ai" target="_blank" class="pl-gh">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2 -->
+      <div class="proj-card tilt-card">
+        <div class="proj-visual" style="--c1:#1a1a2e;--c2:#16213e;--c3:#0f3460;">
+          <div class="browser-bar">
+            <span class="bb-dot" style="background:#ff5f56"></span>
+            <span class="bb-dot" style="background:#ffbd2e"></span>
+            <span class="bb-dot" style="background:#27c93f"></span>
+            <div class="bb-url">prime-clone.dev</div>
+          </div>
+          <div class="browser-screen mobile-emu">
+            <div class="mobile-frame">
+              <div class="mf-bar"></div>
+              <div class="mf-hero"></div>
+              <div class="mf-row"><div class="mf-item"></div><div class="mf-item"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-meta">
+            <div class="proj-tags"><span>HTML</span><span>CSS</span></div>
+            <span class="proj-num">02</span>
+          </div>
+          <h3>Prime Video Clone</h3>
+          <p>Pixel-perfect Amazon Prime Video mobile UI clone with real poster images, hero slider, Top 10 section and full navigation.</p>
+          <div class="proj-links">
+            <a href="#" class="pl-live">Live demo ↗</a>
+            <!-- EDIT: replace with your actual GitHub repo link -->
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/prime-video-clone" target="_blank" class="pl-gh">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3 -->
+      <div class="proj-card tilt-card">
+        <div class="proj-visual" style="--c1:#0d1117;--c2:#1a1a2e;--c3:#0d1025;">
+          <div class="browser-bar">
+            <span class="bb-dot" style="background:#ff5f56"></span>
+            <span class="bb-dot" style="background:#ffbd2e"></span>
+            <span class="bb-dot" style="background:#27c93f"></span>
+            <div class="bb-url">eduflow-lms.dev</div>
+          </div>
+          <div class="browser-screen lms-emu">
+            <div class="lms-side"><div></div><div class="lms-active"></div><div></div><div></div></div>
+            <div class="lms-main">
+              <div class="lms-h"></div>
+              <div class="lms-row"><div></div><div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-meta">
+            <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <span class="proj-num">03</span>
+          </div>
+          <h3>EduFlow LMS</h3>
+          <p>Learning Management System with student & instructor roles, video lessons, quiz engine, progress tracking and live badges.</p>
+          <div class="proj-links">
+            <a href="#" class="pl-live">Live demo ↗</a>
+            <!-- EDIT: replace with your actual GitHub repo link -->
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/eduflow-lms" target="_blank" class="pl-gh">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+      <div class="proj-card tilt-card">
+        <div class="proj-visual" style="--c1:#0f0c29;--c2:#1a0a2e;--c3:#16213e;">
+          <div class="browser-bar">
+            <span class="bb-dot" style="background:#ff5f56"></span>
+            <span class="bb-dot" style="background:#ffbd2e"></span>
+            <span class="bb-dot" style="background:#27c93f"></span>
+            <div class="bb-url">savana-shop.dev</div>
+          </div>
+          <div class="browser-screen shop-emu">
+            <div class="sh-nav"></div>
+            <div class="sh-banner"></div>
+            <div class="sh-grid">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        </div>
+        <div class="proj-info">
+          <div class="proj-meta">
+            <div class="proj-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <span class="proj-num">04</span>
+          </div>
+          <h3>Savana Shop Clone</h3>
+          <p>Fashion e-commerce clone with live cart, product filtering, quick view modal, wishlist, newsletter and real product images.</p>
+          <div class="proj-links">
+            <a href="#" class="pl-live">Live demo ↗</a>
+            <!-- EDIT: replace with your actual GitHub repo link -->
+            <a href="https://github.com/YOUR_GITHUB_USERNAME/savana-shop" target="_blank" class="pl-gh">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="all-projects-cta">
+      <!-- EDIT: replace with your actual GitHub profile link -->
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="btn-line">
+        See all projects on GitHub ↗
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container">
+    <p class="eyebrow">Contact</p>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h2>Let's build something<br><em>great together.</em></h2>
+        <p>
+          I'm actively looking for internship opportunities and freelance projects.
+          Whether you have a project in mind or just want to say hello — my inbox is open.
+        </p>
+
+        <!-- EDIT: replace with your actual email -->
+        <a href="mailto:your@email.com" class="btn-fill">Send an email</a>
+
+        <div class="contact-socials">
+          <!-- EDIT: replace with your LinkedIn profile URL -->
+          <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="cs-item">
+            <div class="cs-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div>
+              <div class="cs-name">LinkedIn</div>
+              <!-- EDIT: replace with your LinkedIn handle -->
+              <div class="cs-val">linkedin.com/in/narutejasri</div>
+            </div>
+          </a>
+          <!-- EDIT: replace with your GitHub profile URL -->
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" class="cs-item">
+            <div class="cs-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </div>
+            <div>
+              <div class="cs-name">GitHub</div>
+              <!-- EDIT: replace with your GitHub username -->
+              <div class="cs-val">github.com/narutejasri</div>
+            </div>
+          </a>
+          <!-- EDIT: replace with your actual email -->
+          <a href="mailto:your@email.com" class="cs-item">
+            <div class="cs-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="cs-name">Email</div>
+              <!-- EDIT: replace with your actual email -->
+              <div class="cs-val">your@email.com</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="cform" onsubmit="submitForm(event)">
+          <div class="cf-row">
+            <div class="cf-field">
+              <label>Name</label>
+              <input type="text" placeholder="Your name" required>
+            </div>
+            <div class="cf-field">
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="cf-field">
+            <label>Subject</label>
+            <input type="text" placeholder="Project inquiry / Internship">
+          </div>
+          <div class="cf-field">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn-fill cf-btn" id="cfBtn">
+            Send message
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="cf-success" id="cfSuccess">
+            ✅ Sent! I'll reply within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container footer-inner">
+    <div class="foot-logo">NT<span>.</span></div>
+    <div class="foot-copy">Designed & built by <strong>Naru Tejasri</strong> · 2026</div>
+    <div class="foot-links">
+      <a href="#hero">Top ↑</a>
+      <!-- EDIT: replace with your actual GitHub and LinkedIn links -->
+      <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
